@@ -39,7 +39,7 @@ This project utilizes the **Food.com - Recipes and Reviews dataset**, which cons
 #### Dataset Source
 
 The dataset is sourced from Kaggle and can be accessed via the following link:
-Kaggle: Food.com - Recipes and Reviews
+[Kaggle: Food.com - Recipes and Reviews](https://www.kaggle.com/datasets/irkaal/foodcom-recipes-and-reviews)
 
 ### Real-World Applications
 
