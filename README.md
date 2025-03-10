@@ -59,6 +59,7 @@ This system can be utilized by:
 project/
 │── project.ipynb       # Jupyter Notebook implementing the recommendation system
 │── data/               # Directory containing dataset files (if extracted)
+|—— requirements.txt    # Download the dependencies
 │── README.md           # Documentation file
 │── data.zip            # Compressed dataset file (if downloading manually)
 ```
@@ -84,7 +85,9 @@ Ensure you have Python (>=3.7) installed. You will also need to install Jupyter 
    ```
 
 3. **Install Dependencies**
-   Recommend to download the dependencies mentioned in *Dependencies* section.
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 4. **Download the Dataset**
    The dataset is automatically downloaded using KaggleHub:
