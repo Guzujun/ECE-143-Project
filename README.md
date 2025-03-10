@@ -52,3 +52,76 @@ This system can be utilized by:
 - **Restaurants and meal delivery services** to offer tailored menu recommendations
 
 - **Fitness enthusiasts** optimizing their nutrition for performance
+
+## 📂 Project Structure
+
+```
+project/
+│── project.ipynb       # Jupyter Notebook implementing the recommendation system
+│── data/               # Directory containing dataset files (if extracted)
+│── requirements.txt    # List of required Python libraries
+│── README.md           # Documentation file
+│── data.zip            # Compressed dataset file (if downloading manually)
+```
+
+## 🚀 How to Run the Project
+
+### Prerequisites
+
+Ensure you have Python (>=3.7) installed. You will also need to install Jupyter Notebook to run the `.ipynb` file.
+
+### Steps to Run:
+
+1. **Clone the Repository** (if applicable):
+   ```bash
+   git clone <repository_url>
+   cd project
+   ```
+
+2. **Set Up the Environment** (Optional but recommended)
+   ```bash
+   python -m venv env
+   source env/bin/activate   # On Windows, use `env\Scripts\activate`
+   ```
+
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. **Download the Dataset**
+   The dataset is automatically downloaded using KaggleHub:
+   ```python
+   import kagglehub
+   path = kagglehub.dataset_download("irkaal/foodcom-recipes-and-reviews")
+   ```
+
+   If the dataset is provided as `data.zip`, extract it manually:
+   ```bash
+   unzip data.zip -d data
+   ```
+
+5. **Run the Jupyter Notebook**
+   ```bash
+   jupyter notebook project.ipynb
+   ```
+   Open the notebook and execute the cells to process data and generate recommendations.
+
+## 🛠️ Dependencies
+
+This project uses the following third-party Python libraries:
+
+- `numpy` - Numerical computations
+- `pandas` - Data handling and manipulation
+- `matplotlib` - Visualization
+- `seaborn` - Statistical data visualization
+- `scikit-learn` - Machine learning utilities
+- `kagglehub` - Downloading datasets from Kaggle
+- `zipfile` - Handling compressed dataset files
+
+To install all required dependencies, run:
+
+```bash
+pip install -r requirements.txt
+```
+
